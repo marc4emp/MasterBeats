@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/signIn.css">
+    <link rel="stylesheet" href="/css/signUp.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro" />
     <!--Fontawesome CDN-->
@@ -22,10 +22,10 @@
 
     <div class="container">
         <div class="d-flex justify-content-center h-100">
-            <div class="card">
+            <div class="card" style="height: 400px;">
                 <div class="card-header">
                     <img src="/img/logoRainBow4.svg" alt="" style="width: 98%;">
-                    <h1>SIGN IN</h1>
+                    <h1>SIGN UP</h1>
                 </div>
                 <div class="card-body pt-0" >
                     <form>
@@ -42,20 +42,23 @@
                             </div>
                             <input type="password" class="form-control redondoDer" placeholder="password">
                         </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text redondoIz"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control redondoDer" placeholder="password (repete)">
+                        </div>
                         <div class="row align-items-center remember">
-                            <input type="checkbox">Remember Me
+                            <input type="checkbox"><span>I agree to the license <a href="">terms.</a></span>
                         </div>
                         <div class="form-group ">
                             <input type="submit" value="Login" class="btn float-right login_btn rounded-pill">
                         </div>
                     </form>
                 </div>
-                <div class="card-footer mt-3">
+                <div class="">
                     <div class="d-flex justify-content-center links">
-                        <a href="/pages/signUp.html" class="text-white">Don't have an account? Sign Up</a>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <a href="/index.html" class="text-white">Forgot your password?</a>
+                        <a href="/pages/signIn.html" class="text-white">You alredy have an account? Login here.</a>
                     </div>
                 </div>
             </div>
