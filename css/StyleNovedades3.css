@@ -1,0 +1,73 @@
+.body{
+    background: black;
+}
+.logoConteiner{
+    width: 290px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+.contenedorDeephouse{
+    background: url('/img/ArtistasRecomendados/futureHouse/fondoFutureHouse.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-top: 5px;
+}
+.h1{
+    margin-top: 25px; 
+    margin-bottom:15px;
+    font-family:'Advent Pro', sans-serif;
+    font-size:40px;
+}
+.h2{
+    margin-bottom:12px;
+    font-family:'Advent Pro', sans-serif;
+    font-size:25px;
+    color:#b0b0b0;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.h3{
+    margin-bottom:16px;
+    font-family:'Advent Pro', sans-serif;
+    font-size:15px;
+    margin-left: 10px;
+    color:#b0b0b0;
+}
+
+.p{
+    font-family: 'Actor', sans-serif;
+    font-size:17px;
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15PX;
+    color:whitesmoke;
+}
+.cardPrincipal{
+    background: linear-gradient(0.25turn, black , #4b5f19);
+    height: 150px;
+}
+.cardPrincipal1{
+    background: linear-gradient(0.25turn, black, #5f732d);
+    height: 150px;
+}.cardPrincipal2{
+    background: linear-gradient(0.25turn, black, #697d41);
+    height: 150px;
+}.cardPrincipal3{
+    background: linear-gradient(0.25turn, black, #7d9155);
+    height: 150px;
+}
+.boton{
+    font-size:12px;
+    font-family:'Advent Pro', sans-serif;
+    background-color:rgb(0,10,255);
+    width:60px;
+    height:25px;
+    margin-top:5px;
+    padding:2px;
+}
+.reproductor{
+    margin-left: 10px; 
+    width: 60px;
+}
