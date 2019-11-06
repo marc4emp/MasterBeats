@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro" />
     <!--Fontawesome CDN-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
 
@@ -22,12 +23,12 @@
 
     <div class="container">
         <div class="d-flex justify-content-center h-100">
-                <div class="card" style="height: 420px;">
+            <div class="card" style="height: 420px;">
                 <div class="card-header">
                     <img src="/img/logoRainBow4.svg" alt="" style="width: 98%;">
                     <h1>SIGN IN</h1>
                 </div>
-                <div class="card-body pt-0" >
+                <div class="card-body pt-0">
                     <form>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
@@ -46,7 +47,9 @@
                             <input type="checkbox"><span>Remember Me</span>
                         </div>
                         <div class="form-group ">
-                            <input type="submit" value="Login" class="btn float-right login_btn rounded-pill">
+                            <!-- <input type="submit" value="Login" class="btn float-right login_btn rounded-pill"
+                                onclick="logIn()"> -->
+                            <a class="btn float-right login_btn rounded-pill" href="/home.html" role="button">Login</a>
                         </div>
                     </form>
                 </div>
@@ -72,6 +75,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        function logIn() {
+            window.open("/home.html", "_self")
+        }
+    </script>
 </body>
 
 </html>
