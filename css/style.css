@@ -1,3 +1,29 @@
+.font-primary {
+    font-family:'Advent Pro', sans-serif;
+    font-weight: bold;
+}
+
+.font-secondary {
+    font-family: Actor, sans-serif;
+}
+
+.bg-black {
+    background: black;
+}
+
+nav a, .dropdown-item {
+    color: #AD00F7 !important;
+}
+
+nav a:hover, .dropdown-item:hover {
+    color: #1F5E9C !important;
+    background: black;
+}
+
+.dropdown-divider {
+    border-top: 1px solid #1F5E9C;
+}
+
 .fondo1 {
         background-image: url(/img/fondo1-1200.png);
     width: 100%;
