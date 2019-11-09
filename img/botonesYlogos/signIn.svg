@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1000mm" height="2500mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 100000 250000"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="8.0163mm" height="7.0442mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 11 9.67"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str2 {stroke:black;stroke-width:20;stroke-miterlimit:22.9256;stroke-opacity:0.560784}
-    .str0 {stroke:black;stroke-width:16.93;stroke-miterlimit:22.9256}
-    .str8 {stroke:#CCCCCC;stroke-width:16.93;stroke-miterlimit:22.9256}
-    .str7 {stroke:yellow;stroke-width:16.93;stroke-miterlimit:22.9256}
-    .str1 {stroke:black;stroke-width:20;stroke-miterlimit:22.9256}
-    .str5 {stroke:#4D4D4D;stroke-width:20;stroke-miterlimit:22.9256}
-    .str4 {stroke:white;stroke-width:20;stroke-miterlimit:22.9256}
-    .str3 {stroke:black;stroke-width:100;stroke-linecap:round;stroke-miterlimit:22.9256}
-    .str6 {stroke:#4D4D4D;stroke-width:24.73;stroke-linecap:round;stroke-miterlimit:10}
-    .fil3 {fill:none}
+    .str0 {stroke:#4D4D4D;stroke-width:0.27;stroke-miterlimit:22.9256}
+    .fil0 {fill:none;fill-rule:nonzero}
+    .fil1 {fill:black;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <line class="fil0 str0" x1="10.86" y1="0" x2="10.86" y2= "9.67" />
+  <path class="fil1" d="M3.15 4.9l0 0c-1.2,0 -2.17,-0.84 -2.17,-1.88l0 -0.64c0,-1.04 0.97,-1.88 2.17,-1.88 1.2,0 2.18,0.84 2.18,1.88l0 0.64c0,1.04 -0.97,1.88 -2.18,1.88z"/>
+  <path class="fil1" d="M5.33 9.18l-4.27 0c-0.58,0 -1.06,-0.41 -1.06,-0.92l0 -1.92c0,-0.65 0.61,-1.17 1.35,-1.17l3.69 0c0.75,0 1.35,0.52 1.35,1.17l0 1.92c0,0.51 -0.47,0.92 -1.06,0.92z"/>
+ </g>
+</svg>
+il3 {fill:none}
     .fil45 {fill:none;fill-rule:nonzero}
     .fil0 {fill:black}
     .fil6 {fill:#000069}
