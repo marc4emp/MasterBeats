@@ -1,71 +1,178 @@
 <!DOCTYPE html>
 <html>
- 
-<head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+
 
     <style>
-        .isolate {
-            background:black;
+        #carousel {
+            position: relative height: 400px top: 50% transform: translateY(-50%) overflow: hidden
         }
 
-        .obj {
-            width: 150px;
-            height: 150px;
-            position: absolute;
-            border-radius: 50%;
+        div {
+            position: absolute transition: transform 1s, left 1s, opacity 1s, z-index 0s opacity: 1
         }
 
-        .first, .second {
-            background-color: rgba(100, 100, 100, 0.274);
+        img {
+            width: 400px transition: width 1s
         }
 
-        .second {
-            margin-left: 180px;
+        &.hideLeft {
+            left: 0% opacity: 0 transform: translateY(50%) translateX(-50%)
         }
 
-        .third {
-            background: rgba(0, 76, 178, 0.5);
-            margin-left: 90px;
+        img {
+            width: 200px
+        }
+
+        &.hideRight {
+            left: 100% opacity: 0 transform: translateY(50%) translateX(-50%) img width: 200px
+        }
+
+        &.prev {
+            z-index: 5 left: 30% transform: translateY(50px) translateX(-50%)
+        }
+
+        img {
+            width: 300px
+        }
+
+        &.prevLeftSecond {
+            z-index: 4 left: 15% transform: translateY(50%) translateX(-50%) opacity: .7
+        }
+
+        img {
+            width: 200px
+        }
+
+        &.selected {
+            z-index: 10 left: 50% transform: translateY(0px) translateX(-50%)
+        }
+
+        &.next {
+            z-index: 5 left: 70% transform: translateY(50px) translateX(-50%)
+        }
+
+        img {
+            width: 300px
+        }
+
+        &.nextRightSecond {
+            z-index: 4 left: 85% transform: translateY(50%) translateX(-50%) opacity: .7
+        }
+
+        img {
+            width: 200px
+        }
+
+        .buttons {
+            position: fixed left: 50% transform: translateX(-50%) bottom: 10px
         }
     </style>
 
 </head>
 
-<body style="background-image: url(/img/fondo1-1200.png);">
-<div class=" display: flex; justify-content: center; align-items: center; width:100%: height:100vh;">
-    <div class="isolate">
-        <div class="first obj"></div>
-        <div class="second obj"></div>
-        <div class="third obj"></div>
+<body>
+
+    <div id="carousel">
+
+        <div class="hideLeft">
+            <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+        </div>
+
+        <div class="prevLeftSecond">
+            <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+        </div>
+
+        <div class="prev">
+            <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+        </div>
+
+        <div class="selected">
+            <img src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+        </div>
+
+        <div class="next">
+            <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+        </div>
+
+        <div class="nextRightSecond">
+            <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+        </div>
+
+        <div class="hideRight">
+            <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+        </div>
+
     </div>
 
-</div>
-
-<!-- 
-    
-    <div class="carousel">
-        <a class="carousel-item" href="index.html"><img src="https://lorempixel.com/250/250/nature/4" style="border-radius: 50%;"></a>
-        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2" style="border-radius: 50%;"></a>
-        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3" style="border-radius: 50%;"></a>
-    </div> -->
-
-    
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <div class="buttons">
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems);
+        function moveToSelected(element) {
+
+            if (element == "next") {
+                var selected = $(".selected").next();
+            } else if (element == "prev") {
+                var selected = $(".selected").prev();
+            } else {
+                var selected = element;
+            }
+
+            var next = $(selected).next();
+            var prev = $(selected).prev();
+            var prevSecond = $(prev).prev();
+            var nextSecond = $(next).next();
+
+            $(selected).removeClass().addClass("selected");
+
+            $(prev).removeClass().addClass("prev");
+            $(next).removeClass().addClass("next");
+
+            $(nextSecond).removeClass().addClass("nextRightSecond");
+            $(prevSecond).removeClass().addClass("prevLeftSecond");
+
+            $(nextSecond).nextAll().removeClass().addClass('hideRight');
+            $(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+        }
+
+        // Eventos teclado
+        $(document).keydown(function (e) {
+            switch (e.which) {
+                case 37: // left
+                    moveToSelected('prev');
+                    break;
+
+                case 39: // right
+                    moveToSelected('next');
+                    break;
+
+                default: return;
+            }
+            e.preventDefault();
+        });
+
+        $('#carousel div').click(function () {
+            moveToSelected($(this));
+        });
+
+        $('#prev').click(function () {
+            moveToSelected('prev');
+        });
+
+        $('#next').click(function () {
+            moveToSelected('next');
         });
     </script>
+
 </body>
 
 </html>
+
+
+
+<!-- https://freefrontend.com/css-carousels/ -->
