@@ -2,97 +2,138 @@
 <html lang="es">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Master Beats</title>
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS Propia -->
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro" />
-    <!--Fontawesome CDN-->
+
+    <!--vector icons and social logos -- Fontawesome CDN-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+    <title>MasterBeats</title>
 </head>
 
-<body style="background: black;">
-    <div class="fondo1">
+<body class="bg-black">
+    <div class="bg-img vh-100" style="background-image: url(/img/fondo1-1200.png);">
+        
+        <!-- CARD -->
+            <div class="container">
+            <div class="vh-100 d-flex flex-wrap align-content-center justify-content-center">
+                <div class="card bg-t70 mb-2">
 
-        <div class="botonesRegistro d-flex flex-wrap align-content-center justify-content-center">
-                <div class="card bg-t70" style="">
-                        <div class="card-header">
-                            <img src="/img/logoRainBow4.svg" alt="" style="width: 98%;">
-                        </div>
-                        <div class="card-body pt-0">
-                                <div class="input-group form-group m-2">
-                                        <div class="input-group-prepend">
-                                                <span class="input-group-text redondoIz bg-azul"><i class="fas fa-user"></i></span>
-                                            </div>
-                                    <a class="btn bg-light redondoDer font-secondary" href="/pages/signIn.html" role="button"
-                                        style="width: 300px; ">Sign In</a>
-                                </div>
-                
-                                <div class="input-group form-group m-2">
-                                        <div class="input-group-prepend">
-                                                <span class="input-group-text redondoIz bg-lila"><i class="fas fa-file"></i></span>
-                                            </div>
-                                    <a class="btn bg-light redondoDer font-secondary" href="/pages/signUp.html" role="button"
-                                        style="width: 300px; ">Sign Up</a>
-                        </div>
-                        <div class="card-footer" >
-                                <img src="/img/botonesYlogos/responsiveMarshy.png" alt="" style="max-width: 150px;">
-                                <img src="/img/googleStore.svg" alt="">
-                                <img src="/img/appleStore.svg" alt="">
-                            </div>
-                        
+                    <!-- CARD HEADER -->
+                    <div class="card-header">
+                        <img src="/img/logoRainBow4.svg" alt="" class="p-2" style="width: 100%;">
                     </div>
-            <!-- <div class="card" style="background-color: rgba(0,0,0,0.7) !important;">
 
-                <div class="input-group form-group m-2">
-                        <div class="input-group-prepend">
+                    <!-- CARD BODY -->
+                    <div class="card-body py-0">
+                        <div class="input-group form-group my-2 justify-content-center">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text redondoIz bg-azul"><i class="fas fa-user"></i></span>
                             </div>
-                    <a class="btn bg-light redondoDer font-secondary" href="/pages/signIn.html" role="button"
-                        style="width: 150px; ">Sign In</a>
-                </div>
+                            <a class="btn bg-light redondoDer font-actor" href="/pages/signIn.html" role="button"
+                                style="width: 80%; ">Sign In</a>
+                        </div>
 
-                <div class="input-group form-group m-2">
-                        <div class="input-group-prepend">
+                        <div class="input-group form-group my-2 justify-content-center">
+                            <div class="input-group-prepend">
                                 <span class="input-group-text redondoIz bg-lila"><i class="fas fa-file"></i></span>
                             </div>
-                    <a class="btn bg-light redondoDer font-secondary" href="/pages/signUp.html" role="button"
-                        style="width: 150px; ">Sign Up</a>
+                            <a class="btn bg-light redondoDer font-actor" href="/pages/signUp.html" role="button"
+                                style="width: 80%; ">Sign Up</a>
+                        </div>
+
+
+                    </div>
+
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col text-center">
+                                <img src="/img/botonesYlogos/responsiveMarshy.png" alt="" class="m-2" style="max-width: 200px;">
+                            </div>
+                            <div class="col">
+                                <div class="row align-content-center justify-content-center" style="height: 50%;">
+                                    <a href="https://play.google.com/store" target="_blank">
+                                        <img src="/img/googleStore.svg" alt="" class="m-2" style="max-width: 120px;">
+                                    </a>
+                                </div>
+                                <div class="row align-content-center justify-content-center" style="height: 50%;">
+                                    <a href="https://www.apple.com/la/buy/" target="_blank">
+                                        <img src="/img/appleStore.svg" alt="" class="m-2" style="max-width: 120px;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            </div> -->
+            </div>
         </div>
-    </div>
+            <!-- CARD END -->
 
-    <div>
-        <h1 style="margin-bottom:16px;font-family:'Advent Pro', sans-serif;font-size:40px;"
-            class="text-center text-light">¿POR QUE MASTERBEATS?</h1>
-        <p class="description text-secondary text-center" style="font-family:Actor, sans-serif;font-size:17px;">
-            MasterBeats es una plataforma musical que te permite actualizarte, compartir, escuchar lo ultimo de la
-            musica
-            electronica.</p>
-    </div>
+        <!-- XQ MASTERBEATS -->
+        <div class="container">
+        <div>
+            <h2 class="text-center text-light font-advent mb-3">¿POR QUE MASTERBEATS?</h2>
+            <p class="text-center text-secondary font-actor">
+                MasterBeats es una plataforma musical que te permite actualizarte, compartir, escuchar lo ultimo de la
+                musica
+                electronica.</p>
+        </div>
 
-    <div class="container">
-        <img src="/img/fondo3.png" alt="" class="img-fluid">
-    </div>
+            <img src="/img/fondo3.png" alt="" class="img-fluid">
+        </div>
+        <!-- XQ MASTERBEATS END -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+
+
+
+
+
+<!-- <div class="card" style="background-color: rgba(0,0,0,0.7) !important;">
+    
+            <div class="input-group form-group m-2">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text redondoIz bg-azul"><i class="fas fa-user"></i></span>
+                        </div>
+                <a class="btn bg-light redondoDer font-secondary" href="/pages/signIn.html" role="button"
+                    style="width: 150px; ">Sign In</a>
+            </div>
+    
+            <div class="input-group form-group m-2">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text redondoIz bg-lila"><i class="fas fa-file"></i></span>
+                        </div>
+                <a class="btn bg-light redondoDer font-secondary" href="/pages/signUp.html" role="button"
+                    style="width: 150px; ">Sign Up</a>
+            </div>
+    
+        </div> -->
