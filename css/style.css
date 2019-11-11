@@ -8,6 +8,9 @@
     font-family: Actor, sans-serif;
 }
 
+.text-black {
+  color: black;
+}
 
 /* BACKGROUNDS */
 .bg-black {
@@ -20,6 +23,22 @@
 
 .bg-lila {
   background-color: #6c2bce !important;
+}
+
+.bg-azul-hover {
+  background-color: #1f5e9c !important;
+}
+
+.bg-lila-hover {
+  background-color: #6c2bce !important;
+}
+
+.bg-azul-hover:hover {
+  background-color: #f8f9fa !important;
+}
+
+.bg-lila-hover:hover {
+  background-color: #f8f9fa !important;
 }
 
 .bg-t70 {

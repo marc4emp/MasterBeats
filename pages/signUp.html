@@ -2,67 +2,88 @@
 <html lang="es">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Master Beats</title>
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS Propia -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/signUp.css">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro" />
-    <!--Fontawesome CDN-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+    <!--vector icons and social logos -- Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>MasterBeats</title>
 </head>
 
-<body>
+<body class="bg-black">
+    <div class="bg-img vh-100" style="background-image: url('/img/signUp/singUp.jpg');">
 
-    <div class="container">
-        <div class="d-flex justify-content-center h-100">
-            <div class="card" style="height: 400px;">
-                <div class="card-header">
-                    <img src="/img/logoRainBow4.svg" alt="" style="width: 98%;">
-                    <h1>SIGN UP</h1>
-                </div>
-                <div class="card-body pt-0" >
-                    <form>
-                        <div class="input-group form-group">
+        <!-- CARD -->
+        <div class="container">
+            <div class="vh-100 d-flex flex-wrap align-content-center justify-content-center">
+                <div class="card bg-t70">
+
+                    <!-- CARD HEADER -->
+                    <div class="card-header text-light pb-0">
+                        <img src="/img/logoRainBow4.svg" alt="" class="p-2" style="width: 100%;">
+                    </div>
+
+                    <!-- CARD BODY -->
+                    <div class="card-body py-0 text-light font-actor">
+                        <h2 class="font-advent m-0 px-2 pt-1">SIGN UP</h2>
+                        <div class="input-group form-group my-2 px-2 justify-content-center">
                             <div class="input-group-prepend">
-                                <span class="input-group-text redondoIz"><i class="fas fa-user"></i></span>
+                                <span class="input-group-text redondoIz bg-lila"><i class="fas fa-user"></i></span>
                             </div>
                             <input type="text" class="form-control redondoDer" placeholder="username">
-
                         </div>
-                        <div class="input-group form-group">
+
+                        <div class="input-group form-group my-2 px-2 justify-content-center">
                             <div class="input-group-prepend">
-                                <span class="input-group-text redondoIz"><i class="fas fa-key"></i></span>
+                                <span class="input-group-text redondoIz bg-lila"><i class="fas fa-key"></i></span>
                             </div>
                             <input type="password" class="form-control redondoDer" placeholder="password">
                         </div>
-                        <div class="input-group form-group">
+
+                        <div class="input-group form-group my-2 px-2 justify-content-center">
                             <div class="input-group-prepend">
-                                <span class="input-group-text redondoIz"><i class="fas fa-key"></i></span>
+                                <span class="input-group-text redondoIz bg-lila"><i class="fas fa-key"></i></span>
                             </div>
                             <input type="password" class="form-control redondoDer" placeholder="password (repete)">
                         </div>
-                        <div class="row align-items-center remember">
-                            <input type="checkbox"><span>I agree to the license <a href="">terms.</a></span>
+
+                        <div class="row align-items-center remember mx-2">
+                            <input type="checkbox" value="" id="remember">
+                            <label class="mx-2 mb-0" for="remember">I agree to the license</label><a href="">terms.</a>
                         </div>
-                        <div class="form-group ">
-                            <input type="submit" value="Login" class="btn float-right login_btn rounded-pill">
+
+                        <div class="form-group px-2">
+                            <button class="btn float-right rounded-pill px-2 mt-2 bg-lila-hover font-weight-bold text-black"
+                                style="width: 100px;" type="" onclick="logIn()">Submit</button>
                         </div>
-                    </form>
-                </div>
-                <div class="">
-                    <div class="d-flex justify-content-center links">
-                        <a href="/pages/signIn.html" class="text-white">You alredy have an account? Login here.</a>
+                    </div>
+
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-center links">
+                            <a href="/pages/signIn.html" class="text-light">You alredy have an account? Login here.</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- CARD END -->
+        
     </div>
 
 
@@ -75,6 +96,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+        <script>
+            function signUp() {
+                window.open("/pages/home.html", "_self")
+            }
+        </script>
 </body>
 
 </html>
