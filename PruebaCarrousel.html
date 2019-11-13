@@ -74,41 +74,52 @@
 
 
 
-        #carouselHomeNoticias div.hideLeft .flip-card {
+        #carouselHomeNoticias div article {
+            width: 400px;
+            transition: width 1s;
+            transition: height 1s;
+        }
+        #carouselHomeNoticias div.hideLeft article {
             width: 200px;
             height: 200px;
-            transition: width 1s;
         }
-
-        #carouselHomeNoticias div.hideRight .flip-card {
+        #carouselHomeNoticias div.hideRight article {
             width: 200px;
             height: 200px;
-            transition: width 1s;
         }
-
-        #carouselHomeNoticias div.prev .flip-card {
+        #carouselHomeNoticias div.prev article {
             width: 300px;
             height: 300px;
-            transition: width 1s;
         }
-
-        #carouselHomeNoticias div.prevLeftSecond .flip-card {
+        #carouselHomeNoticias div.prevLeftSecond article {
             width: 200px;
             height: 200px;
-            transition: width 1s;
         }
-
-        #carouselHomeNoticias div.next .flip-card {
+        #carouselHomeNoticias div.next article {
             width: 300px;
             height: 300px;
-            transition: width 1s;
         }
-
-        #carouselHomeNoticias div.nextRightSecond .flip-card {
+        #carouselHomeNoticias div.nextRightSecond article {
             width: 200px;
             height: 200px;
-            transition: width 1s;
         }
+
+
+        #carouselHomeNoticias div.hideLeft .unfliped-card .flip-card-back,
+        #carouselHomeNoticias div.hideRight .unfliped-card .flip-card-back,
+        #carouselHomeNoticias div.prev .unfliped-card .flip-card-back,
+        #carouselHomeNoticias div.prevLeftSecond .unfliped-card .flip-card-back,
+        #carouselHomeNoticias div.next .unfliped-card .flip-card-back,
+        #carouselHomeNoticias div.nextRightSecond .unfliped-card .flip-card-back,
+        #carouselHomeNoticias div.hideLeft .fliped-card .flip-card-front,
+        #carouselHomeNoticias div.hideRight .fliped-card .flip-card-front,
+        #carouselHomeNoticias div.prev .fliped-card .flip-card-fron,
+        #carouselHomeNoticias div.prevLeftSecond .fliped-card .flip-card-front,
+        #carouselHomeNoticias div.next .fliped-card .flip-card-front,
+        #carouselHomeNoticias div.nextRightSecond .fliped-card .flip-card-front {
+            display: none !important;
+        }
+
     </style>
 </head>
 
@@ -222,11 +233,13 @@
     function flip(cEne) {
         var card = document.getElementById(cEne);
         if (card.classList.contains('selected')) {
-            
-            if (document.getElementById(cEne).getElementsByTagName('article')[0].classList.contains('fliped-card')) {
-                document.getElementById(cEne).getElementsByTagName('article')[0].classList.remove('fliped-card');
+
+            if (card.getElementsByTagName('article')[0].classList.contains('fliped-card')) {
+                card.getElementsByTagName('article')[0].classList.remove('fliped-card');
+                card.getElementsByTagName('article')[0].className += " unfliped-card";
             } else {
-                document.getElementById(cEne).getElementsByTagName('article')[0].className += " fliped-card";
+                card.getElementsByTagName('article')[0].classList.remove('unfliped-card');
+                card.getElementsByTagName('article')[0].className += " fliped-card";
             }
         }
     }
