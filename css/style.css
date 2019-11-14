@@ -247,18 +247,19 @@ nav a:hover, .dropdown-item:hover {
     margin-top: 5px;
     padding: 2px;
   }
-  .media .reproductor {
+  
+  .reproductor {
     margin-left: 10px;
     width: 50px;
   }
 
-  .botonesPlay:hover #imgPlayAct {
+  .botonesPlay #imgPlayAct {
     display: none;
   }
   .botonesPlay:hover #imgPlayAct {
     display: block;
   }
-  .botonesPlay:hover #imgPlayAct {
+  .botonesPlay:hover #imgPlayInact {
     display: none;
   }
 
