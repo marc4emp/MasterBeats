@@ -50,10 +50,10 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">NOVEDADES</a>
+                    <a class="nav-link" href="/home.html">LO ÚLTIMO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ESCENA LOCAL</a>
+                    <a class="nav-link" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
                 </li>
             </ul>
         </div>
@@ -97,12 +97,21 @@
                 <div class="media-body">
                     <h2 class="h2">SOUS SOL</h2>
                     <h3 class="h3">Dizzy Rhythm - Mihai P. Rmx</h3>
-                    <button onclick="navegar('fichaArtista1.html')" class="btn btn-primary boton">+INFO</button>
-                    <img src="/img/songPlayerSmall.svg" alt="reprductor" class="reproductor">
-
+                    <div style="display: flex;align-items: center">
+                        <button onclick="navegar('fichaArtista1.html')" class="btn btn-primary boton mt-0"
+                            type="button">+INFO</button>
+                        <div class="botonesPlay">
+                            <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
+                                class="reproductor">
+                            <img src="/img/botonesYlogos/playAnactivo.png" onclick="playSong('soulSoulAudio')"
+                                alt="reprductor" class="reproductor">
+                            <audio src="./assets/audio/SousSol-DizzyRhythm.mp3" id="soulSoulAudio"></audio>
+                        </div>
+                    </div>
                 </div>
             </li>
         </ul>
+
         <ul class="list-unstyled cardPrincipal1">
             <li class="media">
                 <img class="mr-3" src="img/ArtistasRecomendados/deepHouse/artista002.png"
@@ -110,24 +119,29 @@
                 <div class="media-body">
                     <h2 class="h2">CHRIS STUSSY</h2>
                     <h3 class="h3">Evening Drive</h3>
-                    <button onclick="navegar('fichaArtista1.html')" class="btn btn-primary boton" type="button">+INFO</button>
-                    <img src="/img/songPlayerSmall.svg" onclick="playSong('crisStussyAudio')" alt="reprductor" class="reproductor">
-                    <audio src="./assets/audio/ChrisStussy-EveningDrive.mp3" id="crisStussyAudio"></audio>
-
-                </div>
+                    <button class="btn btn-primary boton" type="button">+INFO</button>
+                    <div class="botonesPlay">
+                        <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
+                            class="reproductor">
+                        <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
+                            class="reproductor">
+                    </div>
             </li>
         </ul>
-        <ul class="list-unstyled cardPrincipal2">
+        <ul class="list-unstyled cardPrincipal1">
             <li class="media">
-                <img class="mr-3" src="img/ArtistasRecomendados/deepHouse/artista003.png"
+                <img class="mr-3" src="img/ArtistasRecomendados/deepHouse/artista002.png"
                     alt="Generic placeholder image">
                 <div class="media-body">
                     <h2 class="h2">SEB ZITO</h2>
                     <h3 class="h3">10AM Fuse</h3>
                     <button class="btn btn-primary boton" type="button">+INFO</button>
-                    <img src="/img/songPlayerSmall.svg" alt="reprductor" class="reproductor">
-
-                </div>
+                    <div class="botonesPlay">
+                        <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
+                            class="reproductor">
+                        <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
+                            class="reproductor">
+                    </div>
             </li>
         </ul>
         <ul class="list-unstyled cardPrincipal3">
@@ -138,9 +152,13 @@
                     <h2 class="h2">NEWMAN</h2>
                     <h3 class="h3">Kiss Of The Seraph</h3>
                     <button class="btn btn-primary boton" type="button">+INFO</button>
-                    <img src="/img/songPlayerSmall.svg" alt="reprductor" class="reproductor">
+                    <div class="botonesPlay">
+                        <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
+                            class="reproductor">
+                        <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
+                            class="reproductor">
 
-                </div>
+                    </div>
             </li>
         </ul>
 
@@ -162,8 +180,8 @@
             </ul>
             <p class="copyright">Master Beats © 2019</p>
         </footer>
-        
-    <!-- FIN FOOTER -->
+
+        <!-- FIN FOOTER -->
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -175,7 +193,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-            <script src="js/navegacion.js"></script>
+        <script src="js/navegacion.js"></script>
 </body>
 
 </html>
