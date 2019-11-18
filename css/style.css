@@ -1,9 +1,11 @@
+.container {
+  max-width: 800px !important;
+}
+
 /* -- FONTS -- */
 
 .font-advent {
   font-family: 'Advent Pro', sans-serif;
-  font-weight: bold;
-  font-size: 15px;
 }
 
 .font-actor {
@@ -27,11 +29,19 @@
 }
 
 .text-gris {
-  color: #b0b0b0;
+  color: #7d8285 !important;
+}
+
+.font-size-15 {
+  font-size: 15px;
 }
 
 .font-size-17 {
   font-size: 17px;
+}
+
+.font-size-40 {
+  font-size: 40px;
 }
 
 /* -- BACKGROUNDS -- */
@@ -99,6 +109,17 @@
   border-bottom-left-radius: 0px;
 }
 
+/*   --  BOTONES -- */
+
+.boton-lila {
+  background-color: #460167 !important;
+  border-color: #a902f5 !important;
+}
+
+.boton-lila:hover {
+  background-color: #a902f5 !important;
+}
+
 /* -- HEIGHT -- */
 
 .vh-100 {
@@ -135,7 +156,7 @@ nav a:hover, .dropdown-item:hover {
 /* -- BACKGROUNDs -- */
 
 #bgHomeNoticias {
-  background-image: url(/img/Noticias/fondo.jpg);
+  background-image: url(/img/Noticias/fondo.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -150,12 +171,10 @@ nav a:hover, .dropdown-item:hover {
   max-width: 150px;
 }
 
-
-
 /* -- Banners Artistas -- */
+
 .media img {
   width: 100px;
-  margin-right: 8px;
 }
 
 .media .h2 {
@@ -166,6 +185,7 @@ nav a:hover, .dropdown-item:hover {
   margin-left: 0px;
   padding-top: 3px;
 }
+
 .media .h3 {
   margin-bottom: 8px;
   font-family: 'Advent Pro', sans-serif;
@@ -173,6 +193,7 @@ nav a:hover, .dropdown-item:hover {
   margin-left: 0px;
   color: #b0b0b0;
 }
+
 .media .boton {
   font-size: 12px;
   font-family: 'Advent Pro', sans-serif;
@@ -182,32 +203,272 @@ nav a:hover, .dropdown-item:hover {
   margin-top: 0px;
   padding: 2px;
 }
-.media .reproductor {
-  margin-left: 10px;
-  width: 60px;
+
+.botonesPlay img {
+  width: 40px;
 }
 
-  /* -- Colores Banners Artistas -- */
-  
-  .cardLila {
-    background: linear-gradient(0.25turn, black, #7d007d);
-    height: 100px;
-  }
-  
-  .cardLila1 {
-    background: linear-gradient(0.25turn, black, #910091);
-    height: 100px;
-  }
-  
-  .cardLila2 {
-    background: linear-gradient(0.25turn, black, #a500a5);
-    height: 100px;
-  }
-  
-  .cardLila3 {
-    background: linear-gradient(0.25turn, black, #b200b2);
-    height: 100px;
-  }
+/* -- Colores Banners Artistas -- */
+
+.cardLila {
+  background: linear-gradient(0.25turn, black, #7d007d);
+}
+
+.cardLila1 {
+  background: linear-gradient(0.25turn, black, #910091);
+}
+
+.cardLila2 {
+  background: linear-gradient(0.25turn, black, #a500a5);
+}
+
+.cardLila3 {
+  background: linear-gradient(0.25turn, black, #b200b2);
+}
+
+.cardAzul {
+  background: linear-gradient(0.25turn, black, #000069);
+}
+
+.cardAzul1 {
+  background: linear-gradient(0.25turn, black, #00007d);
+}
+
+.cardAzul2 {
+  background: linear-gradient(0.25turn, black, #000091);
+}
+
+.cardAzul3 {
+  background: linear-gradient(0.25turn, black, #0000a5);
+}
+
+.cardVerde {
+  background: linear-gradient(0.25turn, black, #4b5f19);
+}
+
+.cardVerde1 {
+  background: linear-gradient(0.25turn, black, #5f732d);
+}
+
+.cardVerde2 {
+  background: linear-gradient(0.25turn, black, #697d41);
+}
+
+.cardVerde3 {
+  background: linear-gradient(0.25turn, black, #7d9155);
+}
+
+/* -- Colores Banners Artistas -- */
+
+.cardLila, .cardLila1, .cardLila2, .cardLila3, .cardAzul, .cardAzul1, .cardAzul2, .cardAzul3, .cardVerde, .cardVerde1, .cardVerde2, .cardVerde3 {
+  height: 100px;
+}
+
+.botonesPlay #imgPlayAct {
+  display: none;
+}
+
+.botonesPlay:hover #imgPlayAct {
+  display: block;
+}
+
+.botonesPlay:hover #imgPlayInact {
+  display: none;
+}
+
+/* --- SOBRE NOSOTROS --- */
+
+.sobreNos img {
+  width: 160px;
+}
+
+/* ---- CARROUSEL HOME NOTICIAS ---- */
+
+#carouselHomeNoticias {
+  position: relative;
+  height: 200px;
+  /* top: 50%;
+    transform: translateY(-50%); */
+  overflow: hidden;
+}
+
+#carouselHomeNoticias div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+
+#carouselHomeNoticias div img {
+  width: 200px;
+  transition: width 1s;
+}
+
+#carouselHomeNoticias div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carouselHomeNoticias div.hideLeft img {
+  width: 100px;
+}
+
+#carouselHomeNoticias div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carouselHomeNoticias div.hideRight img {
+  width: 100px;
+}
+
+#carouselHomeNoticias div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(30px) translateX(-60%);
+}
+
+#carouselHomeNoticias div.prev img {
+  width: 150px;
+}
+
+#carouselHomeNoticias div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carouselHomeNoticias div.prevLeftSecond img {
+  width: 100px;
+}
+
+#carouselHomeNoticias div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carouselHomeNoticias div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(30px) translateX(-40%);
+}
+
+#carouselHomeNoticias div.next img {
+  width: 150px;
+}
+
+#carouselHomeNoticias div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carouselHomeNoticias div.nextRightSecond img {
+  width: 100px;
+}
+
+#carouselHomeNoticias div.hideLeft a, #carouselHomeNoticias div.hideRight a, #carouselHomeNoticias div.prev a, #carouselHomeNoticias div.prevLeftSecond a, #carouselHomeNoticias div.next a, #carouselHomeNoticias div.nextRightSecond a, #carouselHomeNoticias div.hideLeft a, #carouselHomeNoticias div.hideRight a, #carouselHomeNoticias div.prev .fliped-card .flip-card-fron, #carouselHomeNoticias div.prevLeftSecond a, #carouselHomeNoticias div.next a, #carouselHomeNoticias div.nextRightSecond a {
+  display: none !important;
+}
+
+/* ---- CARROUSEL HOME NOTICIAS ---- */
+
+#carouselHomeGeneros {
+  position: relative;
+  height: 150px;
+  /* top: 50%;
+    transform: translateY(-50%); */
+  overflow: hidden;
+}
+
+#carouselHomeGeneros div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+
+#carouselHomeGeneros div img {
+  width: 150px;
+  transition: width 1s;
+}
+
+#carouselHomeGeneros div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carouselHomeGeneros div.hideLeft img {
+  width: 50px;
+}
+
+#carouselHomeGeneros div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carouselHomeGeneros div.hideRight img {
+  width: 50px;
+}
+
+#carouselHomeGeneros div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-70%);
+}
+
+#carouselHomeGeneros div.prev img {
+  width: 100px;
+}
+
+#carouselHomeGeneros div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carouselHomeGeneros div.prevLeftSecond img {
+  width: 50px;
+}
+
+#carouselHomeGeneros div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carouselHomeGeneros div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-30%);
+}
+
+#carouselHomeGeneros div.next img {
+  width: 100px;
+}
+
+#carouselHomeGeneros div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carouselHomeGeneros div.nextRightSecond img {
+  width: 50px;
+}
+
+#carouselHomeGeneros div.hideLeft a, #carouselHomeGeneros div.hideRight a, #carouselHomeGeneros div.prev a, #carouselHomeGeneros div.prevLeftSecond a, #carouselHomeGeneros div.next a, #carouselHomeGeneros div.nextRightSecond a, #carouselHomeGeneros div.hideLeft a, #carouselHomeGeneros div.hideRight a, #carouselHomeGeneros div.prev .fliped-card .flip-card-fron, #carouselHomeGeneros div.prevLeftSecond a, #carouselHomeGeneros div.next a, #carouselHomeGeneros div.nextRightSecond a {
+  display: none !important;
+}
+
+
 
 
 
@@ -215,14 +476,10 @@ nav a:hover, .dropdown-item:hover {
   .logoConteiner {
     justify-content: start;
   }
-
-
   /* -- Banners Artistas -- */
   .media img {
     width: 150px;
-    margin-right: 16px;
   }
-
   .media .h2 {
     margin-bottom: 12px;
     font-family: 'Advent Pro', sans-serif;
@@ -247,143 +504,158 @@ nav a:hover, .dropdown-item:hover {
     margin-top: 5px;
     padding: 2px;
   }
-  
   .reproductor {
-    margin-left: 10px;
     width: 50px;
   }
-
-  .botonesPlay #imgPlayAct {
-    display: none;
-  }
-  .botonesPlay:hover #imgPlayAct {
-    display: block;
-  }
-  .botonesPlay:hover #imgPlayInact {
-    display: none;
-  }
-
-  
   /* -- Colores Banners Artistas -- */
-  
-  .cardLila {
-    background: linear-gradient(0.25turn, black, #7d007d);
+  .cardLila, .cardLila1, .cardLila2, .cardLila3, .cardAzul, .cardAzul1, .cardAzul2, .cardAzul3, .cardVerde, .cardVerde1, .cardVerde2, .cardVerde3 {
     height: 150px;
   }
-  
-  .cardLila1 {
-    background: linear-gradient(0.25turn, black, #910091);
-    height: 150px;
+  .botonesPlay img {
+    width: 40px;
   }
-  
-  .cardLila2 {
-    background: linear-gradient(0.25turn, black, #a500a5);
-    height: 150px;
-  }
-  
-  .cardLila3 {
-    background: linear-gradient(0.25turn, black, #b200b2);
-    height: 150px;
-  }
-}
-
-
-/* ---- CARROUSEL HOME NOTICIAS ---- */
-
-#carouselHomeNoticias {
-  position: relative;
-  height: 400px;
-  /* top: 50%;
+  /* ---- CARROUSEL HOME NOTICIAS ---- */
+  #carouselHomeNoticias {
+    position: relative;
+    height: 400px;
+    /* top: 50%;
     transform: translateY(-50%); */
-  overflow: hidden;
-}
-
-#carouselHomeNoticias div {
-  position: absolute;
-  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
-  opacity: 1;
-}
-
-#carouselHomeNoticias div img {
-  width: 400px;
-  transition: width 1s;
-}
-
-#carouselHomeNoticias div.hideLeft {
-  left: 0%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-}
-
-#carouselHomeNoticias div.hideLeft img {
-  width: 200px;
-}
-
-#carouselHomeNoticias div.hideRight {
-  left: 100%;
-  opacity: 0;
-  transform: translateY(50%) translateX(-50%);
-}
-
-#carouselHomeNoticias div.hideRight img {
-  width: 200px;
-}
-
-#carouselHomeNoticias div.prev {
-  z-index: 5;
-  left: 30%;
-  transform: translateY(50px) translateX(-50%);
-}
-
-#carouselHomeNoticias div.prev img {
-  width: 300px;
-}
-
-#carouselHomeNoticias div.prevLeftSecond {
-  z-index: 4;
-  left: 15%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-}
-
-#carouselHomeNoticias div.prevLeftSecond img {
-  width: 200px;
-}
-
-#carouselHomeNoticias div.selected {
-  z-index: 10;
-  left: 50%;
-  transform: translateY(0px) translateX(-50%);
-}
-
-#carouselHomeNoticias div.next {
-  z-index: 5;
-  left: 70%;
-  transform: translateY(50px) translateX(-50%);
-}
-
-#carouselHomeNoticias div.next img {
-  width: 300px;
-}
-
-#carouselHomeNoticias div.nextRightSecond {
-  z-index: 4;
-  left: 85%;
-  transform: translateY(50%) translateX(-50%);
-  opacity: 0.7;
-}
-
-#carouselHomeNoticias div.nextRightSecond img {
-  width: 200px;
-}
-
-#overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: end;
+    overflow: hidden;
+  }
+  #carouselHomeNoticias div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+  #carouselHomeNoticias div img {
+    width: 400px;
+    transition: width 1s;
+  }
+  #carouselHomeNoticias div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carouselHomeNoticias div.hideLeft img {
+    width: 200px;
+  }
+  #carouselHomeNoticias div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carouselHomeNoticias div.hideRight img {
+    width: 200px;
+  }
+  #carouselHomeNoticias div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  #carouselHomeNoticias div.prev img {
+    width: 300px;
+  }
+  #carouselHomeNoticias div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  #carouselHomeNoticias div.prevLeftSecond img {
+    width: 200px;
+  }
+  #carouselHomeNoticias div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+  }
+  #carouselHomeNoticias div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  #carouselHomeNoticias div.next img {
+    width: 300px;
+  }
+  #carouselHomeNoticias div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  #carouselHomeNoticias div.nextRightSecond img {
+    width: 200px;
+  }
+  /* ---- CARROUSEL HOME NOTICIAS ---- */
+  #carouselHomeGeneros {
+    position: relative;
+    height: 200px;
+    /* top: 50%;
+    transform: translateY(-50%); */
+    overflow: hidden;
+  }
+  #carouselHomeGeneros div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+  #carouselHomeGeneros div img {
+    width: 200px;
+    transition: width 1s;
+  }
+  #carouselHomeGeneros div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carouselHomeGeneros div.hideLeft img {
+    width: 50px;
+  }
+  #carouselHomeGeneros div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carouselHomeGeneros div.hideRight img {
+    width: 50px;
+  }
+  #carouselHomeGeneros div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  #carouselHomeGeneros div.prev img {
+    width: 150px;
+  }
+  #carouselHomeGeneros div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  #carouselHomeGeneros div.prevLeftSecond img {
+    width: 100px;
+  }
+  #carouselHomeGeneros div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+  }
+  #carouselHomeGeneros div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+  }
+  #carouselHomeGeneros div.next img {
+    width: 150px;
+  }
+  #carouselHomeGeneros div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+  }
+  #carouselHomeGeneros div.nextRightSecond img {
+    width: 100px;
+  }
 }

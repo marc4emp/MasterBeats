@@ -46,6 +46,9 @@ $(document).keydown(function(e) {
 $('#carouselHomeNoticias div').click(function() {
   moveToSelected($(this));
 });
+$('#carouselHomeGeneros div').click(function() {
+  moveToSelected($(this));
+});
 
 $('#prev').click(function() {
   moveToSelected('prev');
