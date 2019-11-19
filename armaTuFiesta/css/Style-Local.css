@@ -353,4 +353,12 @@
   .article-list .item .action:hover {
     opacity:1;
   }
+
+  /* Artista DJ Link */
+
+  @media (max-width:500px) {
+    .contenedorDjLink{
+      flex-wrap: wrap
+    }
+  }
   
