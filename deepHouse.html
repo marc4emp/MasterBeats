@@ -2,27 +2,34 @@
 <html lang="es">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS Propia -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/StyleNovedades.css">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro" />
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
 
-    <title>Deep House</title>
+    <!--vector icons and social logos -- Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>MasterBeats</title>
 </head>
 
 <body class="bg-black">
 
     <!-- LOGO -->
     <div class="logoConteiner">
-        <img src="/img/logoRainBow4.svg" width="290px" height="" alt="" class="logo">
+        <img src="/img/logoRainBow4.svg" width="290px" height="" alt="" class="m-4">
     </div>
 
     <!-- NAVBAR -->
@@ -36,24 +43,33 @@
 
             <ul class="nav font-advent" id="myDIV">
                 <li class="nav-item">
-                    <a class="nav-link  active" href="/pages/home.html">HOME</a>
+                    <a class="nav-link" href="/home.html">HOME</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                    <a class="nav-link dropdown-toggle pagActiva" data-toggle="dropdown" href="#" role="button"
                         aria-haspopup="true" aria-expanded="false">GENEROS</a>
                     <div class="dropdown-menu bg-black">
                         <a class="dropdown-item" href="/house.html">House</a>
-                        <a class="dropdown-item" href="/deepHouse.html">Deep House</a>
+                        <a class="dropdown-item pagActiva" href="/deepHouse.html">Deep House</a>
                         <a class="dropdown-item" href="/futureHouse.html">Future House</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/home.html">LO ÚLTIMO</a>
+                    <a class="nav-link" href="/noticias.html">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">MI CUENTA</a>
+                    <div class="dropdown-menu bg-black">
+                        <a class="dropdown-item" href="/error.html">Ver Perfil</a>
+                        <a class="dropdown-item" href="/error.html">Soy DJ</a>
+                        <a class="dropdown-item" href="/error.html">Configuración</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/index.html">Cerrar Sesión</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -67,9 +83,9 @@
 
         <!-- FIN CAROUSEL -->
 
-        <div class="contenedorDeephouse">
-            <h1 class="h1 text-center text-light font-weight-bold">DEEP HOUSE</h1>
-            <p class="p text-justify">
+        <div class="bg-img px-4 pt-4 pb-1" style="background: url('/img/ArtistasRecomendados/deepHouse/fondoDeepHouse.png');">
+            <h1 class="text-center text-light font-advent">DEEP HOUSE</h1>
+            <p class="text-justify text-light font-actor font-size-17">
                 Deep house es un subgénero del House originado en los años 1980 en Estados Unidos, donde inicialmente se
                 combinaron elementos del Chicago house con el jazz-funk2 de los años 1980, y con toques del soul music.
                 La duración de las canciones varía entre 6 y 10 minutos, con un tempo usualmente en el rango de 120 a
@@ -85,103 +101,122 @@
         </div>
 
         <div>
-            <h1 class="h1 text-center text-light font-weight-bold">DESTACADOS</h1>
+            <h1 class="text-center text-light font-advent m-4">DESTACADOS</h1>
         </div>
 
         <!-- Card horizontal 001 -->
-        <br>
-        <ul class="list-unstyled cardPrincipal">
-            <li class="media">
-                <img class="mr-3" src="img/ArtistasRecomendados/deepHouse/artista001.png"
-                    alt="Generic placeholder image">
-                <div class="media-body">
-                    <h2 class="h2">SOUS SOL</h2>
-                    <h3 class="h3">Dizzy Rhythm - Mihai P. Rmx</h3>
-                    <div style="display: flex;align-items: center">
-                        <button onclick="navegar('fichaArtista1.html')" class="btn btn-primary boton mt-0"
-                            type="button">+INFO</button>
-                        <div class="botonesPlay">
-                            <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
-                                class="reproductor">
-                            <img src="/img/botonesYlogos/playAnactivo.png" onclick="playSong('soulSoulAudio')"
-                                alt="reprductor" class="reproductor">
-                            <audio src="./assets/audio/SousSol-DizzyRhythm.mp3" id="soulSoulAudio"></audio>
+        <div class="h-scroll">
+            <ul class="list-unstyled cardAzul" style="min-width: 440px;">
+                <li class="media">
+                    <img class="" src="/img/ArtistasRecomendados/deepHouse/artista001.png"
+                        alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h2 class="h2 ml-2">SOUS SOL</h2>
+                        <h3 class="h3 ml-2">Dizzy Rhythm - Mihai P. Rmx</h3>
+                        <div style="display: flex;align-items: center">
+                            <button onclick="navegar('fichaArtista2.html')" class="btn btn-primary boton mt-0 ml-2"
+                                type="button">+INFO</button>
+                            <div class="botonesPlay ml-2 pausa">
+                                <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
+                                    class="reproductor">
+                                <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
+                                    class="reproductor" onclick="playSong('soulSoulAudio')">
+                                <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
+                                    class="reproductor">
+                                <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
+                                    class="reproductor" onclick="playSong('soulSoulAudio')">
+                                <audio src="/assets/audio/SousSol-DizzyRhythm.mp3" id="soulSoulAudio"
+                                    class="pausa"></audio>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
 
-        <ul class="list-unstyled cardPrincipal1">
-            <li class="media">
-                <img class="mr-3" src="img/ArtistasRecomendados/deepHouse/artista002.png"
-                    alt="Generic placeholder image">
-                <div class="media-body">
-                    <h2 class="h2">CHRIS STUSSY</h2>
-                    <h3 class="h3">Evening Drive</h3>
-                    <button class="btn btn-primary boton" type="button">+INFO</button>
-                    <div class="botonesPlay">
-                        <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
-                            class="reproductor">
-                        <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
-                            class="reproductor">
-                    </div>
-            </li>
-        </ul>
-        <ul class="list-unstyled cardPrincipal1">
-            <li class="media">
-                <img class="mr-3" src="img/ArtistasRecomendados/deepHouse/artista002.png"
-                    alt="Generic placeholder image">
-                <div class="media-body">
-                    <h2 class="h2">SEB ZITO</h2>
-                    <h3 class="h3">10AM Fuse</h3>
-                    <button class="btn btn-primary boton" type="button">+INFO</button>
-                    <div class="botonesPlay">
-                        <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
-                            class="reproductor">
-                        <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
-                            class="reproductor">
-                    </div>
-            </li>
-        </ul>
-        <ul class="list-unstyled cardPrincipal3">
-            <li class="media">
-                <img class="mr-3" src="img/ArtistasRecomendados/deepHouse/artista004.png"
-                    alt="Generic placeholder image">
-                <div class="media-body">
-                    <h2 class="h2">NEWMAN</h2>
-                    <h3 class="h3">Kiss Of The Seraph</h3>
-                    <button class="btn btn-primary boton" type="button">+INFO</button>
-                    <div class="botonesPlay">
-                        <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
-                            class="reproductor">
-                        <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
-                            class="reproductor">
+        <div class="h-scroll">
+                <ul class="list-unstyled cardAzul1" style="min-width: 440px;">
+                    <li class="media">
+                        <img class="" src="/img/ArtistasRecomendados/deepHouse/artista002.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="h2 ml-2">CHRIS STUSSY</h2>
+                            <h3 class="h3 ml-2">Evening Drive</h3>
+                            <div style="display: flex;align-items: center">
+                                <button onclick="navegar('error.html')" class="btn btn-primary boton mt-0 ml-2"
+                                    type="button">+INFO</button>
+                                <div class="botonesPlay ml-2 pausa">
+                                    <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
+                                        class="reproductor">
+                                    <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
+                                        class="reproductor" onclick="playSong('stussy')">
+                                    <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
+                                        class="reproductor">
+                                    <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
+                                        class="reproductor" onclick="playSong('stussy')">
+                                    <audio src="/assets/audio/ChrisStussy-EveningDrive.mp3" id="stussy" class="pausa"></audio>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-                    </div>
-            </li>
-        </ul>
+        <div class="h-scroll">
+                <ul class="list-unstyled cardAzul1" style="min-width: 440px;">
+                    <li class="media">
+                        <img class="" src="/img/ArtistasRecomendados/deepHouse/artista003.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="h2 ml-2">SEB ZITO</h2>
+                            <h3 class="h3 ml-2">10AM Fuse</h3>
+                            <div style="display: flex;align-items: center">
+                                <button onclick="navegar('error.html')" class="btn btn-primary boton mt-0 ml-2"
+                                    type="button">+INFO</button>
+                                <div class="botonesPlay ml-2 pausa">
+                                    <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
+                                        class="reproductor">
+                                    <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
+                                        class="reproductor" onclick="playSong('')">
+                                    <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
+                                        class="reproductor">
+                                    <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
+                                        class="reproductor" onclick="playSong('')">
+                                    <!-- <audio src="#" id="cassim" class="pausa"></audio> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        <div class="h-scroll">
+                <ul class="list-unstyled cardAzul1" style="min-width: 440px;">
+                    <li class="media">
+                        <img class="" src="/img/ArtistasRecomendados/deepHouse/artista004.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="h2 ml-2">NEWMAN</h2>
+                            <h3 class="h3 ml-2">Kiss Of The Seraph</h3>
+                            <div style="display: flex;align-items: center">
+                                <button onclick="navegar('error.html')" class="btn btn-primary boton mt-0 ml-2"
+                                    type="button">+INFO</button>
+                                <div class="botonesPlay ml-2 pausa">
+                                    <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
+                                        class="reproductor">
+                                    <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
+                                        class="reproductor" onclick="playSong('')">
+                                    <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
+                                        class="reproductor">
+                                    <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
+                                        class="reproductor" onclick="playSong('')">
+                                    <!-- <audio src="#" id="cassim" class="pausa"></audio> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
     </div>
-    <!-- COMIENZO FOOTER -->
-
-    <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
-                        class="icon ion-social-snapchat"></i></a><a href="#"><i
-                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">Master Beats © 2019</p>
-        </footer>
-
-        <!-- FIN FOOTER -->
+ 
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
