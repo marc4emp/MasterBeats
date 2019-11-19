@@ -43,7 +43,7 @@
 
             <ul class="nav font-advent" id="myDIV">
                 <li class="nav-item">
-                    <a class="nav-link  active" href="#">HOME</a>
+                    <a class="nav-link  pagActiva" href="/home.html">HOME</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -52,15 +52,24 @@
                         <a class="dropdown-item" href="/house.html">House</a>
                         <a class="dropdown-item" href="/deepHouse.html">Deep House</a>
                         <a class="dropdown-item" href="/futureHouse.html">Future House</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">NOVEDADES</a>
+                    <a class="nav-link" href="/noticias.html">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ESCENA LOCAL</a>
+                    <a class="nav-link" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">MI CUENTA</a>
+                    <div class="dropdown-menu bg-black">
+                        <a class="dropdown-item" href="/error.html">Ver Perfil</a>
+                        <a class="dropdown-item" href="/error.html">Soy DJ</a>
+                        <a class="dropdown-item" href="/error.html">Configuración</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/index.html">Cerrar Sesión</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -81,8 +90,7 @@
             </div> -->
 
                 <div class="pos prevLeftSecond">
-                    <img src="/img/Noticias/Noticias001.jpg">
-                    <a href="/noticia1.html" class="stretched-link"></a>
+                    <img src="/img/Noticias/Noticias003.jpg">
                 </div>
 
                 <div class="pos prev">
@@ -91,7 +99,8 @@
                 </div>
 
                 <div class="pos selected">
-                    <img src="/img/Noticias/Noticias003.jpg">
+                    <img src="/img/Noticias/Noticias001.jpg">
+                    <a href="/noticia1.html" class="stretched-link"></a>
                 </div>
 
                 <div class="pos next">
@@ -177,15 +186,18 @@
                         <div style="display: flex;align-items: center">
                             <button onclick="navegar('fichaArtista2.html')" class="btn btn-primary boton mt-0 ml-2"
                                 type="button">+INFO</button>
-                            <div class="botonesPlay ml-2">
+                            <div class="botonesPlay ml-2 pausa">
                                 <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
                                     class="reproductor" onclick="playSong('soulSoulAudio')">
+                                <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
+                                    class="reproductor">
+                                <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
+                                    class="reproductor" onclick="playSong('soulSoulAudio')">
                                 <audio src="/assets/audio/SousSol-DizzyRhythm.mp3" id="soulSoulAudio"
                                     class="pausa"></audio>
                             </div>
-
                         </div>
                     </div>
                 </li>
@@ -201,13 +213,16 @@
                         <div style="display: flex;align-items: center">
                             <button onclick="navegar('fichaArtista2.html')" class="btn btn-primary boton mt-0 ml-2"
                                 type="button">+INFO</button>
-                            <div class="botonesPlay ml-2">
+                            <div class="botonesPlay ml-2 pausa">
                                 <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
                                     class="reproductor" onclick="playSong('cassim')">
-                                <audio src="/assets/audio/Cassimm-ShinedOnMe.mp3" id="cassim"
-                                    class="pausa"></audio>
+                                    <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
+                                        class="reproductor">
+                                    <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
+                                        class="reproductor" onclick="playSong('cassim')">
+                                <audio src="/assets/audio/Cassimm-ShinedOnMe.mp3" id="cassim" class="pausa"></audio>
                             </div>
                         </div>
                     </div>
@@ -225,13 +240,16 @@
                         <div style="display: flex;align-items: center">
                             <button onclick="navegar('fichaArtista2.html')" class="btn btn-primary boton mt-0 ml-2"
                                 type="button">+INFO</button>
-                            <div class="botonesPlay ml-2">
+                            <div class="botonesPlay ml-2 pausa">
                                 <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
                                     class="reproductor" onclick="playSong('meduza')">
-                                <audio src="/assets/audio/Meduza-LoseControl.mp3" id="meduza"
-                                    class="pausa"></audio>
+                                    <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
+                                        class="reproductor">
+                                    <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
+                                        class="reproductor" onclick="playSong('meduza')">
+                                <audio src="/assets/audio/Meduza-LoseControl.mp3" id="meduza" class="pausa"></audio>
                             </div>
                         </div>
                     </div>
@@ -242,7 +260,7 @@
         <hr style="border: 1px dashed #383838;" class="mt-4">
     </div>
 
-<!-- CARD HORIZONTAL -->
+    <!-- CARD HORIZONTAL -->
 
     <div class="container mt-5">
         <h1 class="font-advent text-gris text-size-40 mb-4">ENCONTRA Y CONTRATA MUSICA EN VIVO</h1>
@@ -268,25 +286,6 @@
         </div>
     </div>
 
-
-    <!-- COMIENZO FOOTER -->
-    <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
-                        class="icon ion-social-snapchat"></i></a><a href="#"><i
-                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">Master Beats © 2019</p>
-        </footer>
-        <!-- FIN FOOTER -->
-    </div>
 
 </body>
 
