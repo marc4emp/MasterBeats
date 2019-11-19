@@ -4,5 +4,17 @@ function navegar(url) {
 }
 
 function playSong(id) {
- document.getElementById(id).play()
+    let cancion = document.getElementById(id);
+    
+    if (cancion.classList.contains('pausa')) {
+        cancion.classList.remove('pausa');
+        cancion.className += " reprod";
+        cancion.play()
+    } else {
+        cancion.classList.remove('reprod');
+        cancion.className += " pausa";
+        cancion.pause()
+    }
+
+
 }
