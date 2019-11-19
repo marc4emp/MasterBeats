@@ -144,7 +144,7 @@ nav a, .dropdown-item {
   color: #AD00F7 !important;
 }
 
-nav a:hover, .dropdown-item:hover {
+nav a:hover, .dropdown-item:hover, .pagActiva {
   color: #1F5E9C !important;
   background: black;
 }
@@ -264,6 +264,7 @@ nav a:hover, .dropdown-item:hover {
   height: 100px;
 }
 
+/* ---BOTON PLAY --- */
 .botonesPlay #imgPlayAct {
   display: none;
 }
@@ -275,6 +276,39 @@ nav a:hover, .dropdown-item:hover {
 .botonesPlay:hover #imgPlayInact {
   display: none;
 }
+
+.botonesPlay.reprod #imgPlayAct {
+  display: none;
+}
+
+.botonesPlay.reprod #imgPlayInact {
+  display: none;
+}
+
+/* ---BOTON PAUSA --- */
+.botonesPlay #imgPausaAct {
+  display: none;
+}
+
+.botonesPlay #imgPausaInact {
+  display: none;
+}
+
+.botonesPlay.reprod #imgPausaAct {
+  display: none;
+}
+
+.botonesPlay:hover.reprod #imgPausaAct {
+  display: block;
+}
+
+.botonesPlay.reprod #imgPausaInact {
+  display: block;
+}
+.botonesPlay:hover.reprod #imgPausaInact {
+  display: none;
+}
+
 
 /* --- SOBRE NOSOTROS --- */
 
