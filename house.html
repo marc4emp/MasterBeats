@@ -13,16 +13,24 @@
 
     <!-- CSS Propia -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Noticias.css">
+    <link rel="stylesheet" href="/css/Footer-Dark.css">
+
+
 
     <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--vector icons and social logos -- Fontawesome CDN-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Icono Navegador -->
+    <link rel="shortcut icon" href="img/IconoNavegador.png">
 
-    <title>MasterBeats</title>
+    <title>House</title>
 </head>
 
 <body class="bg-black">
@@ -55,7 +63,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/noticias.html">NOVEDADES</a>
+                    <a class="nav-link" href="/novedades.html">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
@@ -145,12 +153,12 @@
                                 <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
-                                    class="reproductor" onclick="playSong('')">
+                                    class="reproductor" onclick="playSong('ramona')">
                                 <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
-                                    class="reproductor" onclick="playSong('')">
-                                <!-- <audio src="#" id="cassim" class="pausa"></audio> -->
+                                    class="reproductor" onclick="playSong('ramona')">
+                                <audio src="/assets/audio/StandUp-Ramona.mp3" id="ramona" class="pausa"></audio>
                             </div>
                         </div>
                     </div>
@@ -171,12 +179,12 @@
                                 <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
-                                    class="reproductor" onclick="playSong('')">
+                                    class="reproductor" onclick="playSong('endor')">
                                 <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
-                                    class="reproductor" onclick="playSong('')">
-                                <!-- <audio src="#" id="cassim" class="pausa"></audio> -->
+                                    class="reproductor" onclick="playSong('endor')">
+                                <audio src="/assets/audio/Endor-PumpItUp.mp3" id="endor" class="pausa"></audio>
                             </div>
                         </div>
                     </div>
@@ -197,12 +205,12 @@
                                 <img src="/img/botonesYlogos/playInactivo.png" alt="reprductor" id="imgPlayInact"
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
-                                    class="reproductor" onclick="playSong('')">
+                                    class="reproductor" onclick="playSong('nader')">
                                 <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
-                                    class="reproductor" onclick="playSong('')">
-                                <!-- <audio src="#" id="cassim" class="pausa"></audio> -->
+                                    class="reproductor" onclick="playSong('nader')">
+                                <audio src="/assets/audio/NaderRazdar-GetUrFreakOn.mp3" id="nader" class="pausa"></audio>
                             </div>
                         </div>
                     </div>
@@ -211,6 +219,23 @@
         </div>
 
     </div>
+    <hr style="border: 1px dashed #383838;" class="mt-4">
+
+
+    <!-- COMIENZO FOOTER -->
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i
+                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                            class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Master Beats © 2019</p>
+    </div>
+    </footer>
+    </div>
+    <!-- FIN FOOTER -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

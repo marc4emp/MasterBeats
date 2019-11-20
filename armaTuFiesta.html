@@ -4,14 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina locales</title>
+    <title>Arma tu fiesta</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <!-- Fonts -->
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro" />
@@ -19,9 +18,12 @@
     <!-- CSS Propia -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="armaTuFiesta/css/Style-Local.css">
+    <link rel="stylesheet" href="/css/Footer-Dark.css">
+    <link rel="stylesheet" href="/css/Noticias.css">
+    <!-- Icono Navegador -->
+    <link rel="shortcut icon" href="img/IconoNavegador.png">
 
 </head>
-
 <body class="bg-black">
     <!-- LOGO -->
     <div class="logoConteiner">
@@ -29,7 +31,6 @@
     </div>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,7 +39,7 @@
 
             <ul class="nav font-advent" id="myDIV">
                 <li class="nav-item">
-                    <a class="nav-link  active" href="/pages/home.html">HOME</a>
+                    <a class="nav-link" href="/home.html">HOME</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -47,15 +48,24 @@
                         <a class="dropdown-item" href="/house.html">House</a>
                         <a class="dropdown-item" href="/deepHouse.html">Deep House</a>
                         <a class="dropdown-item" href="/futureHouse.html">Future House</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/home.html">LO ÚLTIMO</a>
+                    <a class="nav-link" href="/novedades.html">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
+                    <a class="nav-link pagActiva" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">MI CUENTA</a>
+                    <div class="dropdown-menu bg-black">
+                        <a class="dropdown-item" href="/error.html">Ver Perfil</a>
+                        <a class="dropdown-item" href="/error.html">Soy DJ</a>
+                        <a class="dropdown-item" href="/error.html">Configuración</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/index.html">Cerrar Sesión</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -69,6 +79,13 @@
             <p class="text-center pp1">Contrata Bandas, DJs y Solistas. Sin comisiones.</p>
         </div>
         <div class="row articles">
+            <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="/img/ArmaTuFiesta/dj.jpg"></a>
+                <h3 class="text-left hh1">DJs<br></h3>
+                <p class="pp">Tenemos una amplia oferta de DJs que mezclan todo tipo de
+                    canciones. Pero mezclar no es lo único que hace un DJ, sino también saber lo que el público
+                    quiere oír y seleccionar las canciones adecuadas para crear un buen ambiente.</p>
+                <a class="btn boton-lila text-light" href="/dj.html" role="button">Contratar</a>
+            </div>
             <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid"
                         src="/img/ArmaTuFiesta/banda.jpg"></a>
                 <h3 class="text-left hh1" style="color:#7d8285 !important;">BANDAS<br></h3>
@@ -76,30 +93,23 @@
                     da una visión clara de la oferta existente y te ayuda a evaluar si el espectáculo que presenta
                     una determinada banda se ajusta a lo que
                     quieres contratar.</p>
-                <a href="#" class="action"><button class="btn btn-danger" type="button"
-                        style="background-color: #460167 !important; border-color: #a902f5 !important;">Contratar</button></a>
-            </div>
-            <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="/img/ArmaTuFiesta/dj.jpg"></a>
-                <h3 class="text-left hh1">DJs<br></h3>
-                <p class="pp">Tenemos una amplia oferta de DJs que mezclan con gran estilo todo tipo de
-                    canciones. Pero mezclar no es lo único que hace un DJ, sino también saber lo que el público
-                    quiere oír y seleccionar las canciones adecuadas para crear un buen ambiente.</p>
-                <a href="/dj.html" class="action"><button class="btn btn-danger" type="button"
+                <a href="/error.html" class="action"><button class="btn btn-danger" type="button"
                         style="background-color: #460167 !important; border-color: #a902f5 !important;">Contratar</button></a>
             </div>
             <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid"
                         src="/img/ArmaTuFiesta/solita.jpg"></a>
                 <h3 class="text-left hh1" style="color:#7d8285 !important;">SOLISTAS</h3>
                 <p class="pp">El tipo de artistas en solitario que ofrecemos va desde cantautores a
-                    solistas. El denominador común es que en solitario saben crear un completo espectáculo. Unos
+                    solistas. El denominador común es saber crear un completo espectáculo. Unos
                     porque son animadores natos, otros porque dominan su instrumento con gran
-                    maestría.</p><a href="#" class="action"><button class="btn btn-danger" type="button"
+                    maestría.</p><a href="/error.html" class="action"><button class="btn btn-danger" type="button"
                         style="background-color: #460167  !important; border-color: #a902f5 !important;">Contratar</button></a>
             </div>
         </div>
     </div>
     <!-- FIN CONTRATA -->
     <br>
+    <hr style="border: 1px dashed #383838;" class="mt-4">
     <br>
     <!-- INICIO TESTIMONIOS -->
     <div class="brands"></div>
@@ -108,7 +118,6 @@
             <h1 class="hh1">TESTIMONIOS DE CLIENTES</h1>
             <h2 class="text-center pp1">Nuestros clientes nos quieren! Lee que es lo que tiene que decir de nosotros
                 abajo..</h2>
-
         </div>
         <div class="container">
             <div class="row">
@@ -134,7 +143,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box">
-                        <p class="description">Con MasterBeats© reemplacé esas horas interminables de matear.</p>
+                        <p class="description">Con MasterBeats© reemplacé esas horas interminables de matear. Gracias
+                            MB!</p>
                     </div>
                     <div class="author"><img class="rounded-circle" src="/img/ArmaTuFiesta/testimonio1.png">
                         <h5 class="name">Paula Ordoñes</h5>
@@ -148,15 +158,12 @@
     <br>
     <br>
     <!-- INICIO VENTAJAS -->
-
     <div class="features-blue">
         <div class="container">
             <div>
                 <h1 class="hh2">VENTAJAS DE MasterBeats© </h1>
                 <h2 class="text-center pp2">Unas de las ventajas de MasterBeats© es poder ver rápidamente</h2>
-
             </div>
-
             <div class="row features">
                 <div class="col-sm-6 col-md-4 item"><i class="fa fa-database icon"></i>
                     <h3 class="text-left pp2">Base de datos variada</h3>
@@ -191,7 +198,6 @@
     </div>
     <!-- FIN VENTAJAS -->
     <!-- INICIO COMO FUNCIONA -->
-
     <div class="intro">
         <div class="container">
             <div>
@@ -199,24 +205,23 @@
                 <h2 class="text-center pp1">A través de MasterBeats puedes contratar Bandas, Djs y
                     Solistas<strong>sin ninguna comisión</strong>. Te ponemos directamente en contacto con el
                     músico:</h2>
-
             </div>
-
             <div class="row articles">
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="/img/ArmaTuFiesta/howitworks1.png"></a>
+                <div class="col-sm-6 col-md-4 item"><a href="/error.html"><img class="img-fluid"
+                            src="/img/ArmaTuFiesta/howitworks1.png"></a>
                     <h3 class="hh1"><strong>BUSCÁ</strong></h3>
                     <p class="pp">MasterBeats© tiene la base de datos más grande de artistas de Argentina.
                         Mira, escucha y compara la amplia oferta de músicos en nuestra plataforma.</p><a href="#"
                         class="action"><i class="fa fa-arrow-circle-right"></i></a>
                 </div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid"
+                <div class="col-sm-6 col-md-4 item"><a href="/error.html"><img class="img-fluid"
                             src="/img/ArmaTuFiesta/howitworks2.png"></a>
                     <h3 class="hh1"><strong>RESERVÁ</strong></h3>
                     <p class="pp">Entra directamente en contacto con el artista deseado enviandole un mensaje.
                         A través de nuestro sistema de chat puedes comprobar la disponibilidad.</p><a href="#"
                         class="action"><i class="fa fa-arrow-circle-right"></i></a>
                 </div>
-                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid"
+                <div class="col-sm-6 col-md-4 item"><a href="/error.html"><img class="img-fluid"
                             src="/img/ArmaTuFiesta/howitworks3.png"></a>
                     <h3 class="hh1">FIESTA</h3>
                     <p class="pp">¡Organiza sin preocupaciones tu fiesta! MasterBeats© te ofrece el mejor
@@ -226,28 +231,34 @@
             </div>
         </div>
         <!-- FIN COMO FUNCIONA -->
+        <hr style="border: 1px dashed #383838;" class="mt-4">
         <!-- COMIENZO FOOTER -->
-        <div class="footer-basic">
+        <div class="footer-dark">
             <footer>
-                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
-                            class="icon ion-social-snapchat"></i></a><a href="#"><i
-                            class="icon ion-social-twitter"></i></a><a href="#"><i
-                            class="icon ion-social-facebook"></i></a>
+                <div class="container">
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                                class="icon ion-social-twitter"></i></a><a href="#"><i
+                                class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                class="icon ion-social-instagram"></i></a></div>
                 </div>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">Home</a></li>
-                    <li class="list-inline-item"><a href="#">Services</a></li>
-                    <li class="list-inline-item"><a href="#">About</a></li>
-                    <li class="list-inline-item"><a href="#">Terms</a></li>
-                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                </ul>
                 <p class="copyright">Master Beats © 2019</p>
-            </footer>
-            <!-- FIN FOOTER -->
+        </div>
+        </footer>
+    </div>
+    <!-- FIN FOOTER -->
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

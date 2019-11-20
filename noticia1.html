@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lo Ultimo</title>
+    <title>Novedades</title>
     <!-- css boostrap -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- css logos y fuentes -->
@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/fichaArtista3.css">
     <link rel="stylesheet" href="/css/Noticias.css">
+    <link rel="stylesheet" href="/css/Footer-Dark.css">
+
     <!-- Icono Navegador -->
     <link rel="shortcut icon" href="img/IconoNavegador.png">
 
@@ -30,37 +32,47 @@
     </div>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
 
-            <ul class="nav font-advent" id="myDIV">
-                <li class="nav-item">
-                    <a class="nav-link  active" href="/pages/home.html">HOME</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">GENEROS</a>
-                    <div class="dropdown-menu bg-black">
-                        <a class="dropdown-item" href="/house.html">House</a>
-                        <a class="dropdown-item" href="/deepHouse.html">Deep House</a>
-                        <a class="dropdown-item" href="/futureHouse.html">Future House</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/home.html">LO ÚLTIMO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- FIN NAVBAR -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+    
+                <ul class="nav font-advent" id="myDIV">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">GENEROS</a>
+                        <div class="dropdown-menu bg-black">
+                            <a class="dropdown-item" href="/house.html">House</a>
+                            <a class="dropdown-item" href="/deepHouse.html">Deep House</a>
+                            <a class="dropdown-item" href="/futureHouse.html">Future House</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagActiva" href="/noticias.html">NOVEDADES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">MI CUENTA</a>
+                        <div class="dropdown-menu bg-black">
+                            <a class="dropdown-item" href="/error.html">Ver Perfil</a>
+                            <a class="dropdown-item" href="/error.html">Soy DJ</a>
+                            <a class="dropdown-item" href="/error.html">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/index.html">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- FIN NAVBAR -->
     <!-- COMIENZO ARTICULO -->
     <div class="article-clean">
         <div class="container">
@@ -137,67 +149,23 @@
         </div>
     </div>
     <!-- FIN ARTICULO -->
-    <!-- COMIENZO TEAM --
 
-    <div class="team-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Team </h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh
-                    erat, pellentesque ut laoreet vitae. </p>
+        <!-- COMIENZO FOOTER -->
+        <div class="footer-dark">
+                <footer>
+                    <div class="container">
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                                    class="icon ion-social-twitter"></i></a><a href="#"><i
+                                    class="icon ion-social-snapchat"></i></a><a href="#"><i
+                                    class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                    <p class="copyright">Master Beats © 2019</p>
             </div>
-            <div class="row people">
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="img/Noticias/team001.png">
-                    <h3 class="name">Marco Carrasco</h3>
-                    <p class="title">Developer</p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                        aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam
-                        dictum feugiat tellus, a semper massa. </p>
-                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-                </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="img/Noticias/team002.png">
-                    <h3 class="name">Marcelo Ruffino</h3>
-                    <p class="title">Ux - Ui Designer</p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                        aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam
-                        dictum feugiat tellus, a semper massa. </p>
-                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-                </div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="img/Noticias/3.jpg">
-                    <h3 class="name">Omar Cansilleri</h3>
-                    <p class="title">Becado</p>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                        aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam
-                        dictum feugiat tellus, a semper massa. </p>
-                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                                class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-                </div>
+            </footer>
             </div>
-        </div>
-    </div>
-    !-- FIN TEAM -->
+            <!-- FIN FOOTER -->
 
-    <!-- COMIENZO FOOTER -->
-    <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
-                        class="icon ion-social-snapchat"></i></a><a href="#"><i
-                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">Master Beats © 2019</p>
-        </footer>
-    </div>
-    <!-- FIN FOOTER -->
-    <script src="/js/jquery.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 </body>

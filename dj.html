@@ -4,21 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina locales</title>
+    <title>Djs Locales</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <!-- CSS Propia -->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="armaTuFiesta/css/Style-Local.css">
+    <link rel="stylesheet" href="/css/Footer-Dark.css">
+
+    <!-- Icono Navegador -->
+    <link rel="shortcut icon" href="img/IconoNavegador.png">
 
 </head>
 
@@ -29,14 +32,16 @@
     </div>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
             <ul class="nav font-advent" id="myDIV">
                 <li class="nav-item">
-                    <a class="nav-link  active" href="/pages/home.html">HOME</a>
+                    <a class="nav-link" href="/home.html">HOME</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -45,15 +50,24 @@
                         <a class="dropdown-item" href="/house.html">House</a>
                         <a class="dropdown-item" href="/deepHouse.html">Deep House</a>
                         <a class="dropdown-item" href="/futureHouse.html">Future House</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/home.html">LO ÚLTIMO</a>
+                    <a class="nav-link" href="/novedades.html">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
+                    <a class="nav-link pagActiva" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">MI CUENTA</a>
+                    <div class="dropdown-menu bg-black">
+                        <a class="dropdown-item" href="/error.html">Ver Perfil</a>
+                        <a class="dropdown-item" href="/error.html">Soy DJ</a>
+                        <a class="dropdown-item" href="/error.html">Configuración</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/index.html">Cerrar Sesión</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -61,7 +75,7 @@
     <!-- FIN NAVBAR -->
     <!-- COMIENZO FOTO ROMPECABEZA -->
     <div class="container">
-        <div class="d-flex justify-content-center contenedorDjLink">
+        <div class="d-flex justify-content-center">
             <div class="d-flex flex-column">
                 <img src="/img/escenaLocal/FondoPagina/001activo copia.png" onclick="navegar('Local1.html')"
                     class="img-fluid" alt="">
@@ -82,25 +96,32 @@
 
     </div>
     <!-- FIN FOTO ROMPECABEZA -->
+    <hr style="border: 1px dashed #383838;" class="mt-4">
 
     <!-- COMIENZO FOOTER -->
-    <div class="footer-basic">
+    <div class="footer-dark">
         <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
-                        class="icon ion-social-snapchat"></i></a><a href="#"><i
-                        class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
+            <div class="container">
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i
+                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                            class="icon ion-social-instagram"></i></a></div>
             </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
             <p class="copyright">Master Beats © 2019</p>
-        </footer>
-        <!-- FIN FOOTER -->
+    </div>
+    </footer>
+    </div>
+    <!-- FIN FOOTER -->
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>

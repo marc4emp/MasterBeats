@@ -13,16 +13,30 @@
 
     <!-- CSS Propia -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="armaTuFiesta/css/Style-Local.css">
+    <link rel="stylesheet" href="/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="/css/Noticias.css">
+    <link rel="stylesheet" href="/css/Footer-Dark.css">
+
+
+
+
+
 
     <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--vector icons and social logos -- Fontawesome CDN-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <title>MasterBeats</title>
+    <!-- Icono Navegador -->
+    <link rel="shortcut icon" href="img/IconoNavegador.png">
+
+    <title>Home</title>
 </head>
 
 <body class="bg-black">
@@ -55,7 +69,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/noticias.html">NOVEDADES</a>
+                    <a class="nav-link" href="/novedades.html">NOVEDADES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/armaTuFiesta.html">ARMÁ TU FIESTA</a>
@@ -79,7 +93,7 @@
 
     <!-- CAROUSEL -->
     <div class="container">
-        <h1 class="font-advent text-gris text-size-40">LO ULTIMO</h1>
+        <h1 class="font-advent text-gris text-size-40">NOVEDADES</h1>
 
 
         <div class="py-4" id="bgHomeNoticias">
@@ -218,10 +232,10 @@
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
                                     class="reproductor" onclick="playSong('cassim')">
-                                    <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
-                                        class="reproductor">
-                                    <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
-                                        class="reproductor" onclick="playSong('cassim')">
+                                <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
+                                    class="reproductor">
+                                <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
+                                    class="reproductor" onclick="playSong('cassim')">
                                 <audio src="/assets/audio/Cassimm-ShinedOnMe.mp3" id="cassim" class="pausa"></audio>
                             </div>
                         </div>
@@ -245,10 +259,10 @@
                                     class="reproductor">
                                 <img src="/img/botonesYlogos/playAnactivo.png" alt="reprductor" id="imgPlayAct"
                                     class="reproductor" onclick="playSong('meduza')">
-                                    <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
-                                        class="reproductor">
-                                    <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
-                                        class="reproductor" onclick="playSong('meduza')">
+                                <img src="/img/botonesYlogos/pausaInactivo.png" alt="reprductor" id="imgPausaInact"
+                                    class="reproductor">
+                                <img src="/img/botonesYlogos/pausaAnactivo.png" alt="reprductor" id="imgPausaAct"
+                                    class="reproductor" onclick="playSong('meduza')">
                                 <audio src="/assets/audio/Meduza-LoseControl.mp3" id="meduza" class="pausa"></audio>
                             </div>
                         </div>
@@ -285,6 +299,23 @@
             </div>
         </div>
     </div>
+    <hr style="border: 1px dashed #383838;" class="mt-4">
+
+
+    <!-- COMIENZO FOOTER -->
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i
+                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                            class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Master Beats © 2019</p>
+    </div>
+    </footer>
+    </div>
+    <!-- FIN FOOTER -->
 
 
 </body>
@@ -300,6 +331,7 @@
     crossorigin="anonymous"></script>
 <script src="/js/navegacion.js"></script>
 <script src="/js/carrousel.js"></script>
+
 
 
 
