@@ -1,11 +1,11 @@
 .body{
     background: black;
 }
-.logoConteiner{
+/* .logoConteiner{
     width: 290px;
     padding-top: 10px;
     margin-left: 10px;
-}
+} */
 .contenedorDeephouse{
     background: url('/img/ArtistasRecomendados/house/fondoHouse.png');
     background-size: cover;
