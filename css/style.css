@@ -309,6 +309,22 @@ nav a:hover, .dropdown-item:hover, .pagActiva {
   display: none;
 }
 
+/* --- DJ Activo/Inactivo --- */
+.DjsLink {
+  cursor: pointer;
+}
+
+.DjsLink .dj-activo {
+  display: none;
+}
+
+.DjsLink:hover .dj-activo {
+  display: block;
+}
+
+.DjsLink:hover .dj-inActivo {
+  display: none;
+}
 
 /* --- SOBRE NOSOTROS --- */
 
